@@ -89,7 +89,8 @@ p{
 
 #error{
     color: var(--error);
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+    display: none;
 }
 
 /**
@@ -354,4 +355,98 @@ form .get-started-btn:hover{
 .social i:hover{
     border: 1px solid var(--cta-gradient-one);
     color: var(--cta-gradient-one);
+}
+
+/**
+* ! Media Queries
+**/
+
+@media(min-width:768px){
+
+    #features .container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #features img{
+        height: 60px;
+    }
+
+    #testimonials .container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #sign-up form{
+        display: flex;
+        gap: 30px;
+    }
+
+    .input-field{
+        flex: 4;
+    }
+
+    .get-started-btn{
+        flex: 2;
+    }
+}
+
+@media(min-width:1024px){
+    body{
+        font-size: 20px;
+    }
+
+    .container{
+        padding: 3rem 6rem;
+    }
+
+    #showcase .container {
+        background-image: url(./images/bg-curvy-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 350px;
+        background-position: 0 585px;
+    }
+
+    .showcase-section-illustration{
+        width: 60%;
+        margin: auto;
+    }
+
+    .showcase-section-text{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin: auto;
+    }
+
+    .text-cont{
+        /* border: 2px solid pink; */
+        width: 40%;
+        margin: auto;
+    }
+    
+    #stay-productive .container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #sign-up{
+        padding: 10rem;
+    }
+
+    .footer-info{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    }
+
+    .links-group {
+        margin: -10px;
+    }
+
+    .links-group a{
+        font-size: 1rem;
+    }
 }
